@@ -1,32 +1,46 @@
 import React from "react";
 
 const skills = [
-  { name: "HTML", color: "text-orange-500", link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
-  { name: "CSS", color: "text-blue-500", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
-  { name: "JavaScript", color: "text-yellow-500", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-  { name: "React", color: "text-cyan-500", link: "https://react.dev/" },
-  { name: "TypeScript", color: "text-blue-600", link: "https://www.typescriptlang.org/docs/" },
-  { name: "Next.js", color: "text-gray-700", link: "https://nextjs.org/docs" },
+  { name: "HTML", level: 90, category: "Frontend" },
+  { name: "CSS", level: 85, category: "Frontend" },
+  { name: "JavaScript", level: 88, category: "Frontend" },
+  { name: "React", level: 85, category: "Frontend" },
+  { name: "TypeScript", level: 80, category: "Frontend" },
+  { name: "Next.js", level: 75, category: "Frontend" },
+  { name: "Tailwind CSS", level: 85, category: "Styling" },
+  { name: "Responsive Design", level: 90, category: "Styling" },
+  { name: "Git & GitHub", level: 80, category: "Tools" },
 ];
 
 const Skills = () => {
+  const categories = [...new Set(skills.map(s => s.category))];
+
   return (
-    <section id="skills" className="py-20 px-6">
-      <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-blue-600 mb-10">My Skills</h2>
-        <div className="flex flex-wrap justify-center gap-6">
-          {skills.map((skill) => (
-            <a
-              key={skill.name}
-              href={skill.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white shadow-lg rounded-xl px-6 py-4 w-40 flex items-center justify-center hover:scale-105 transform transition"
-            >
-              <span className={`font-bold text-xl ${skill.color}`}>
-                {skill.name}
-              </span>
-            </a>
+    <section id="skills" className="py-20 px-6 bg-slate-900">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold text-white text-center mb-12 animate-fadeInUp">Skills & Expertise</h2>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {categories.map(category => (
+            <div key={category} className="bg-slate-800 p-6 rounded-lg hover:bg-slate-700 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10">
+              <h3 className="text-xl font-semibold text-blue-400 mb-4">{category}</h3>
+              <div className="space-y-4">
+                {skills.filter(s => s.category === category).map(skill => (
+                  <div key={skill.name}>
+                    <div className="flex justify-between mb-2">
+                      <span className="text-slate-300">{skill.name}</span>
+                      <span className="text-slate-400">{skill.level}%</span>
+                    </div>
+                    <div className="w-full bg-slate-700 rounded-full h-2">
+                      <div 
+                        className="bg-blue-500 h-2 rounded-full transition-all duration-1000"
+                        style={{ width: `${skill.level}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>

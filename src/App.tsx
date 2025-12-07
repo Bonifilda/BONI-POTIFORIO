@@ -1,20 +1,19 @@
-
 import Navbar from "./components/Navbar";
 import About from "./components/About";
-
-import Project from "./components/project";
+import Contact from "./components/Contact";
+import Project from "./components/Project";
 import Skills from "./components/Skills";
-import Hero from "./components/hero";
-
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <About/>
-      <Project/>
-      <Skills/>
+      <About />
+      <Skills />
+      <Project />
+      <Contact />
     </>
   );
 }

@@ -14,43 +14,77 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-blue-600 mb-10">Contact Me</h2>
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          <input
-            type="text"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            placeholder="Your Name"
-            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            placeholder="Your Email"
-            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
-            required
-          />
-          <textarea
-            name="message"
-            value={form.message}
-            onChange={handleChange}
-            placeholder="Your Message"
-            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
-            required
-          />
-          <button
-            type="submit"
-            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
-          >
-            Send Message
-          </button>
-        </form>
+    <section id="contact" className="py-20 px-6 bg-slate-900">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold text-white text-center mb-4 animate-fadeInUp">Get In Touch</h2>
+        <p className="text-slate-300 text-center mb-12">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+        
+        <div className="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 className="text-2xl font-semibold text-white mb-4">Contact Information</h3>
+            <p className="text-slate-300 mb-6">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Let's connect!</p>
+            
+            <div className="space-y-4">
+              <div>
+                <h4 className="text-blue-400 font-semibold mb-1">Email</h4>
+                <p className="text-slate-300">your.email@example.com</p>
+              </div>
+              <div>
+                <h4 className="text-blue-400 font-semibold mb-1">Phone</h4>
+                <p className="text-slate-300">+1 (555) 123-4567</p>
+              </div>
+              <div>
+                <h4 className="text-blue-400 font-semibold mb-1">Location</h4>
+                <p className="text-slate-300">Your City, Country</p>
+              </div>
+            </div>
+          </div>
+
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label className="block text-slate-300 mb-2">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="John Doe"
+                className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500"
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-slate-300 mb-2">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                placeholder="john@example.com"
+                className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500"
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-slate-300 mb-2">Message</label>
+              <textarea
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder="Your message here..."
+                rows={5}
+                className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 resize-none"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );
