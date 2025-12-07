@@ -1,11 +1,11 @@
-import React from "react";
+
 
 const About = () => {
   return (
     <section id="about" className="py-20 px-6 bg-gray-50">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         
-        {/* LEFT SIDE: IMAGE */}
+    
         <div className="flex justify-center">
           <img
             src="/profile.png"
@@ -13,8 +13,6 @@ const About = () => {
             className="w-64 h-64 rounded-full object-cover shadow-lg"
           />
         </div>
-
-        {/* RIGHT SIDE: TEXT */}
         <div>
           <h2 className="text-4xl font-bold text-blue-600">About Me</h2>
           <p className="text-gray-600 mt-4">
