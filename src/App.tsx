@@ -1,16 +1,13 @@
-import Navbar from "./components/navbar";
-
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/hero";
 
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className="pt-20 px-6">
-        <h1 className="text-4xl font-bold text-center mt-10">
-          Welcome to my Portfolio
-        </h1>
-      </div>
+      <Hero />
     </>
   );
 }
