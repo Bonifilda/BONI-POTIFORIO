@@ -10,7 +10,7 @@ const About = () => {
               I'm a passionate web developer with expertise in modern JavaScript frameworks and technologies. I love building interactive and responsive web applications that provide excellent user experiences.
             </p>
             <p>
-              My journey in web development has equipped me with a strong foundation in both frontend and backend technologies. I'm constantly learning and staying updated with the latest industry trends.
+              My journey in web development has equipped me with a strong foundation infrontend technologies. I'm constantly learning and staying updated with the latest industry trends.
             </p>
             <p>
               When I'm not coding, I enjoy contributing to open-source projects, learning new technologies, and sharing knowledge with the developer community.

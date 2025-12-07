@@ -27,15 +27,15 @@ const Contact = () => {
             <div className="space-y-4">
               <div>
                 <h4 className="text-blue-400 font-semibold mb-1">Email</h4>
-                <p className="text-slate-300">your.email@example.com</p>
+                <p className="text-slate-300">bonimani2020@gmail.com</p>
               </div>
               <div>
                 <h4 className="text-blue-400 font-semibold mb-1">Phone</h4>
-                <p className="text-slate-300">+1 (555) 123-4567</p>
+                <p className="text-slate-300">0784120496</p>
               </div>
               <div>
                 <h4 className="text-blue-400 font-semibold mb-1">Location</h4>
-                <p className="text-slate-300">Your City, Country</p>
+                <p className="text-slate-300">Kigali city</p>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ const Contact = () => {
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="John Doe"
+                placeholder=" you name"
                 className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500"
                 required
               />
@@ -60,7 +60,7 @@ const Contact = () => {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="john@example.com"
+                placeholder="you email"
                 className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500"
                 required
               />
