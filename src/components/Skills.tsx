@@ -1,5 +1,3 @@
-import React from "react";
-
 const skills = [
   { name: "HTML", level: 90, category: "Frontend" },
   { name: "CSS", level: 85, category: "Frontend" },

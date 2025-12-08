@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Project from "./components/Project";
+import Projects from "./components/Project";
 import Skills from "./components/Skills";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
@@ -13,7 +13,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <Project />
+      <Projects />
       <Contact />
       <Footer />
     </>

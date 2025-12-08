@@ -43,7 +43,7 @@ my-portifolio/
 
 - Primary: Green (#16a34a)
 - Background: White (#ffffff)
-- Text: Black & Gray shades
+- `Text: Black & Gray shades
 - Accents: Light green & gray tones
 
 # Getting Started
