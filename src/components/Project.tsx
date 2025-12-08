@@ -40,14 +40,14 @@ image: "/project3.png"
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-6 bg-slate-800">
+    <section id="projects" className="py-20 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-white text-center mb-4 animate-fadeInUp">Featured Projects</h2>
-        <p className="text-slate-300 text-center mb-12">Here are some of my recent projects that showcase my skills and creativity</p>
+        <h2 className="text-4xl font-bold text-green-600 text-center mb-4 animate-fadeInUp">Featured Projects</h2>
+        <p className="text-gray-700 text-center mb-12">Here are some of my recent projects that showcase my skills and creativity</p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
-            <div key={project.name} className="bg-slate-700 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
+            <div key={project.name} className="bg-white border-2 border-green-200 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:border-green-600">
               <img 
                 src={project.image} 
                 alt={project.name} 
@@ -57,16 +57,16 @@ const Projects = () => {
                 }}
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">{project.name}</h3>
-                <p className="text-slate-300 text-sm mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold text-green-600 mb-2">{project.name}</h3>
+                <p className="text-gray-700 text-sm mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map(tag => (
-                    <span key={tag} className="bg-slate-600 text-blue-400 px-3 py-1 rounded-full text-xs">{tag}</span>
+                    <span key={tag} className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs">{tag}</span>
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <button className="text-blue-400 hover:text-blue-300 text-sm font-semibold">Code</button>
-                  <button className="text-blue-400 hover:text-blue-300 text-sm font-semibold">Demo</button>
+                  <button className="text-green-600 hover:text-green-700 text-sm font-semibold">Code</button>
+                  <button className="text-green-600 hover:text-green-700 text-sm font-semibold">Demo</button>
                 </div>
               </div>
             </div>
