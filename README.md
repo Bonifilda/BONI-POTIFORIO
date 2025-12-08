@@ -1,75 +1,108 @@
-# React + TypeScript + Vite
+# 🌿 Bonifilda's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website showcasing my frontend development skills and projects. Built with React, TypeScript, and Tailwind CSS with a clean white and green color scheme.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design** - Fully responsive across all devices
+- **Modern UI** - Clean white and green professional color scheme
+- **Smooth Animations** - Engaging fade-in and hover effects
+- **Project Showcase** - Display of featured projects with descriptions
+- **Skills Section** - Visual representation of technical skills
+- **Contact Form** - Easy way for visitors to get in touch
+- **Fast Performance** - Built with Vite for optimal loading speed
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **React** - Frontend library
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **Vite** - Build tool and dev server
+- **HTML5 & CSS3** - Modern web standards
 
-Note: This will impact Vite dev & build performances.
+## 📂 Project Structure
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+my-portifolio/
+├── public/
+│   ├── Boni.jpg
+│   └── project1-6.png
+├── src/
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Project.tsx
+│   │   ├── Contact.tsx
+│   │   └── Footer.tsx
+│   ├── App.tsx
+│   └── main.tsx
+└── package.json
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎨 Color Palette
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Primary**: Green (#16a34a)
+- **Background**: White (#ffffff)
+- **Text**: Black & Gray shades
+- **Accents**: Light green & gray tones
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚦 Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/BONI-POTIFOLIO.git
 ```
+
+2. Navigate to the project directory
+```bash
+cd BONI-POTIFOLIO/my-portifolio
+```
+
+3. Install dependencies
+```bash
+npm install
+```
+
+4. Start the development server
+```bash
+npm run dev
+```
+
+5. Open your browser and visit `http://localhost:5173`
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+The build files will be in the `dist` folder.
+
+## 📧 Contact
+
+- **Email**: bonimani2020@gmail.com
+- **Phone**: 0784120496
+- **Location**: Kigali, Rwanda
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- Design inspiration from modern portfolio trends
+- Icons and images are self-created or properly licensed
+- Built with passion and dedication to frontend development
+
+---
+
+**Made with 💚 by Bonifilda**
