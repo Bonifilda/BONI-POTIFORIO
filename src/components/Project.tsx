@@ -1,39 +1,40 @@
 const projects = [
   {
-    name: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with product management, shopping cart, and secure checkout. Built with React and TypeScript.",
+    name: "E-Commerce -flower",
+    description: "A full-featured e-commerce platform with flower management, shopping cart, and secure checkout. Built with React and TypeScript.",
     tags: ["React", "TypeScript", "Tailwind CSS"],
-    image: "/project1.jpg"
+    image: "/project1.png"
   },
   {
-    name: "Task Management App",
-    description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+    name: "React--movie",
+    description: "  MovieFlix - React Movie Explorer A single-page application (SPA) built with React that allows users to explore movies, view details, search, filter by category, and save favorites..",
     tags: ["Next.js", "React", "JavaScript"],
-    image: "/project2.jpg"
+    image: "/project2.png"
   },
   {
-    name: "Weather Dashboard",
-    description: "A beautiful weather dashboard that displays current weather conditions and forecasts for multiple locations with interactive charts.",
-    tags: ["React", "API Integration", "CSS"],
-    image: "/project3.jpg"
+   name: "Dashboaddevelopment",
+description: "A beautiful weather dashboard that displays current weather conditions and forecasts for multiple locations with interactive charts.",
+tags: ["React", "API Integration", "CSS"],
+image: "/project3.png"
+
   },
   {
-    name: "Portfolio Website",
-    description: "A modern, responsive portfolio website showcasing projects and skills with smooth animations and professional design.",
+    name: "book-capstone",
+    description: "  Book Explorer Book Explorer is a responsive, interactive web application that allows users to browse books, search for titles, and save their favorite books. ",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "/project4.jpg"
+    image: "/project4.png"
   },
   {
-    name: "Blog Platform",
-    description: "A full-stack blog platform with markdown support, comments, and user authentication. Features a clean, minimalist design.",
+    name: "work-firebase",
+    description: "This project demonstrates the fundamentals of integrating a frontend application with Firebase services, including Firestore, Authentication, and real-time database updates. ",
     tags: ["Next.js", "TypeScript", "React"],
-    image: "/project5.jpg"
+    image: "/project5.png"
   },
   {
-    name: "Social Media Dashboard",
-    description: "An analytics dashboard for tracking social media metrics across multiple platforms with data visualization and insights.",
-    tags: ["React", "TypeScript", "Charts"],
-    image: "/project6.jpg"
+    name: "Freelance Dashboard",
+    description: "Amodern, type-safe freelance management dashboard that helps freelancers track clients, projects, and payments with a clean UI, dark mode, and real-time state management..",
+    tags: ["React", "TypeScript", "next.jpg"],
+    image: "/project6.png"
   },
 ];
 
@@ -47,9 +48,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <div key={project.name} className="bg-slate-700 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
-              <div className="h-48 bg-slate-600 flex items-center justify-center">
-                <span className="text-slate-400 text-sm">{project.name}</span>
-              </div>
+              <img src={project.image} alt={project.name} className="h-48 w-full object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-2">{project.name}</h3>
                 <p className="text-slate-300 text-sm mb-4">{project.description}</p>
