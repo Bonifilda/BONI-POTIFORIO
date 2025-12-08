@@ -24,7 +24,10 @@ const Hero = () => {
             <img 
               src="/Boni.jpg" 
               alt="Bonifilda image" 
-              className="relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover border-4 border-blue-500/30 shadow-2xl hover:scale-105 transition-transform duration-500"
+              className="relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover object-top border-4 border-blue-500/30 shadow-2xl hover:scale-105 transition-transform duration-500 bg-slate-700"
+              onError={(e) => {
+                e.currentTarget.src = 'https://via.placeholder.com/400/475569/94a3b8?text=Boni';
+              }}
             />
           </div>
         </div>

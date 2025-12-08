@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-white">Portfolio</h1>
+        <h1 className="text-2xl font-bold text-white">BONI</h1>
 
         <ul className="hidden md:flex gap-8 text-slate-300 font-medium">
           <li>

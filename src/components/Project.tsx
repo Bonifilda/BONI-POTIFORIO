@@ -48,7 +48,14 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <div key={project.name} className="bg-slate-700 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
-              <img src={project.image} alt={project.name} className="h-48 w-full object-cover" />
+              <img 
+                src={project.image} 
+                alt={project.name} 
+                className="h-48 w-full object-cover bg-slate-600" 
+                onError={(e) => {
+                  e.currentTarget.src = 'https://via.placeholder.com/400x300/475569/94a3b8?text=' + encodeURIComponent(project.name);
+                }}
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-2">{project.name}</h3>
                 <p className="text-slate-300 text-sm mb-4">{project.description}</p>
