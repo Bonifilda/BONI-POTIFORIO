@@ -4,7 +4,7 @@ const Hero = () => {
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
         <div className="text-center md:text-left">
           <h1 className="text-5xl md:text-6xl font-bold text-black mb-6 animate-fadeInUp">
-            Hi, I'm a <span className="text-green-600">MANRADUKUNDA Bonifida</span>
+            Hi, I'm a <span className="text-green-600">MANIRADUKUNDA Bonifida</span>
           </h1>
           <p className="text-xl text-gray-700 mb-8 leading-relaxed animate-fadeIn" style={{animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards'}}>
             Crafting modern web experiences with React, Next.js, and TypeScript. Passionate about building scalable applications that make a difference.
